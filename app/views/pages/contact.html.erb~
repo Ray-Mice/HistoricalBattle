@@ -1,3 +1,2 @@
 <%= provide(:title, 'Contact Me') %>
 <h1>Historical Battle#Contact Me</h1>
-<p>Contact page of application</p>
