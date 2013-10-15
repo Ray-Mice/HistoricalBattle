@@ -1,4 +1,5 @@
 Kulu::Application.routes.draw do
+  resources :battles
   root to: 'pages#home'
   match '/contact', to: 'pages#contact', via: 'get'
   match '/about', to: 'pages#about', via: 'get'

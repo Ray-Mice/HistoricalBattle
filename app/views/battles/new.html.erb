@@ -1,0 +1,32 @@
+<% provide(:title, 'Adding New Article') %>
+<h1>Adding New Article</h1>
+
+<div class="">
+  <div class="">
+    <%= form_for(@battle) do |f| %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :date %>
+      <%= f.text_field :date %>
+
+      <%= f.label :location %>
+      <%= f.password_field :location %>
+
+      <%= f.label :belligerent %>
+      <%= f.password_field :belligerent %>
+
+      <%= f.label :strength %>
+      <%= f.password_field :strength %>
+      
+      <%= f.label :casualties %>
+      <%= f.password_field :casualties %>
+      
+      <%= f.label :result %>
+      <%= f.password_field :result %>
+
+      <%= f.submit "Create New Article" %>
+    <% end %>
+  </div>
+</div>
