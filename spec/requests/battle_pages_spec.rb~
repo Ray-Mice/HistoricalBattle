@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-describe "User pages" do
+describe "Article of battle pages" do
 
   subject { page }
 
   describe "Adding New Article page" do
-    before { visit new_battle_path }
+    before { visit '/battles/new' }
     let(:submit) { "Create New Article" }
     it { should have_content('Adding New Article') }
     it { should have_title(full_title('Adding New Article')) }

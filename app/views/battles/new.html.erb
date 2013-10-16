@@ -4,7 +4,7 @@
 <div class="">
   <div class="">
     <%= form_for(@battle) do |f| %>
-
+      <%= render 'shared/error_messages' %>
       <%= f.label :name %>
       <%= f.text_field :name %>
 
@@ -12,19 +12,19 @@
       <%= f.text_field :date %>
 
       <%= f.label :location %>
-      <%= f.password_field :location %>
+      <%= f.text_field :location %>
 
       <%= f.label :belligerent %>
-      <%= f.password_field :belligerent %>
+      <%= f.text_field :belligerent %>
 
       <%= f.label :strength %>
-      <%= f.password_field :strength %>
+      <%= f.text_field :strength %>
       
       <%= f.label :casualties %>
-      <%= f.password_field :casualties %>
+      <%= f.text_field :casualties %>
       
       <%= f.label :result %>
-      <%= f.password_field :result %>
+      <%= f.text_field :result %>
 
       <%= f.submit "Create New Article" %>
     <% end %>

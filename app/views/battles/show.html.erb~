@@ -1,4 +1,4 @@
-<% provide(:title, @battle.name) %>
+<% provide(:title, @battle.name) %>  <% provide(:title, @battle.name) %>
 <h1><%= @battle.name %></h1>
 <div class="">
   <ul>

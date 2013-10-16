@@ -1,4 +1,8 @@
 class BattlesController < ApplicationController
+  def index
+    @battle = Battle.all
+  end
+
   def new
     @battle = Battle.new
   end

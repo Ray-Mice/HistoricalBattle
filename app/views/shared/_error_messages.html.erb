@@ -1,0 +1,12 @@
+<% if @battle.errors.any? %>
+<div>
+  <div>
+    Sorry, pal. You have missed <%= pluralize(@battle.errors.count, "error") %> mandatory fields to create a new article.
+  </div>
+    <ul>
+     <% @battle.errors.full_messages.each do |msg| %>
+       <li>* <%= msg %></li>
+     <% end %>
+    </ul>
+</div>
+<% end %>
