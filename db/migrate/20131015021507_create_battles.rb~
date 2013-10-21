@@ -2,7 +2,7 @@ class CreateBattles < ActiveRecord::Migration
   def change
     create_table :battles do |t|
       t.string :name
-      t.date :date
+      t.string :date
       t.string :location
       t.string :belligerent
       t.string :strength

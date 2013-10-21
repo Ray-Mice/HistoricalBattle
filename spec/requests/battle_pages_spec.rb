@@ -9,6 +9,12 @@ describe "Article of battle pages" do
     let(:submit) { "Create New Article" }
     it { should have_content('Adding New Article') }
     it { should have_title(full_title('Adding New Article')) }
+    it { should have_content('Belligerent-A') }
+    it { should have_content('Belligerent-B') }
+    it { should have_content('Strength-A') }
+    it { should have_content('Strength-B') }
+    it { should have_content('Casualties & Losses-A') }
+    it { should have_content('Casualties & Losses-B') }
 
     describe "with invalid information" do
       it "should not create a new article" do

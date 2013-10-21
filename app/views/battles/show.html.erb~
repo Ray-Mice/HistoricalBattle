@@ -1,13 +1,16 @@
-<% provide(:title, @battle.name) %>  <% provide(:title, @battle.name) %>
+<% provide(:title, @battle.name) %>
 <h1><%= @battle.name %></h1>
 <div class="">
   <ul>
-    <li><%= @battle.name %></li>
+    <li><% @battle.name %></li>
     <li><%= @battle.date %></li>
     <li><%= @battle.location %></li>
-    <li><%= @battle.belligerent %></li>
-    <li><%= @battle.strength %></li>
-    <li><%= @battle.casualties %></li>
+    <li><%= @battle.belligerentA %></li>
+    <li><%= @battle.belligerentB %></li>
+    <li><%= @battle.strengthA %></li>
+    <li><%= @battle.strengthB %></li>
+    <li><%= @battle.casualtiesA %></li>
+    <li><%= @battle.casualtiesB %></li>
     <li><%= @battle.result %></li>
   </ul>
 </div>

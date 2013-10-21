@@ -4,9 +4,12 @@ class CreateBattles < ActiveRecord::Migration
       t.string :name
       t.string :date
       t.string :location
-      t.string :belligerent
-      t.string :strength
-      t.string :casualties
+      t.string :belligerentA
+      t.string :belligerentB
+      t.string :strengthA
+      t.string :strengthB
+      t.string :casualtiesA
+      t.string :casualtiesB
       t.string :result
 
       t.timestamps

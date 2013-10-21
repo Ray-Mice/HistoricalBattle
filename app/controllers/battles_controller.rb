@@ -23,6 +23,6 @@ class BattlesController < ApplicationController
     private
 
     def battle_params
-      params.require(:battle).permit(:name, :date, :location, :belligerent, :strength, :casualties, :result)
+      params.require(:battle).permit(:name, :date, :location, :belligerentA, :belligerentB, :strengthA, :strengthB, :casualtiesA, :casualtiesB, :result)
     end
 end
