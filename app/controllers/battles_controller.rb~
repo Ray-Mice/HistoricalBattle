@@ -14,7 +14,7 @@ class BattlesController < ApplicationController
   def create
     @battle = Battle.new(battle_params)
     if @battle.save
-      redirect_to @battle
+      redirect_to show_battle_path #@battle
     else
       render 'new'
     end
@@ -23,6 +23,6 @@ class BattlesController < ApplicationController
     private
 
     def battle_params
-      params.require(:battle).permit(:name, :date, :location, :belligerentA, :belligerentB, :strengthA, :strengthB, :casualties, :result)
+      params.require(:battle).permit(:name, :date, :location, :belligerentA, :belligerentB, :strengthA, :strengthB, :casualtiesA, :casualtiesB, :result)
     end
 end

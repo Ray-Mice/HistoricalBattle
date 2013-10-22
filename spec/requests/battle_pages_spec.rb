@@ -27,9 +27,12 @@ describe "Article of battle pages" do
         fill_in "name",         with: "Battle of Example"
         fill_in "date",        with: "12-05-1500"
         fill_in "location",     with: "Example Location"
-        fill_in "belligerent", with: "A & B"
-        fill_in "strength", with: "A1 & B2"
-        fill_in "casualties", with: "1 & 2"
+        fill_in "belligerentA", with: "A"
+        fill_in "belligerentB", with: "B"
+        fill_in "strengthA", with: "100"
+        fill_in "strengthB", with: "150"
+        fill_in "casualtiesA", with: "10"
+        fill_in "casualtiesB", with: "15"
         fill_in "result", with: "A win"
       end
       it "should create a user" do

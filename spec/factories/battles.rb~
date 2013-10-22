@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :battle do
-    name "Example Battle" 
+    name "Battle of Example" 
     date "12-05-1500"
     location "Example Location" 
     belligerent "A & B"

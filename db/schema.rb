@@ -15,11 +15,14 @@ ActiveRecord::Schema.define(version: 20131015053023) do
 
   create_table "battles", force: true do |t|
     t.string   "name"
-    t.date     "date"
+    t.string   "date"
     t.string   "location"
-    t.string   "belligerent"
-    t.string   "strength"
-    t.string   "casualties"
+    t.string   "belligerentA"
+    t.string   "belligerentB"
+    t.string   "strengthA"
+    t.string   "strengthB"
+    t.string   "casualtiesA"
+    t.string   "casualtiesB"
     t.string   "result"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -5,9 +5,12 @@ FactoryGirl.define do
     name "Battle of Example" 
     date "12-05-1500"
     location "Example Location" 
-    belligerent "A & B"
-    strength "A1 & B2" 
-    casualties "1 & 2" 
+    belligerentA "A"
+    belligerentB "B"
+    strengthA "100"
+    strengthB "150" 
+    casualtiesA "10"
+    casualtiesB "15" 
     result "A win"
   end
 end

@@ -1,16 +1,27 @@
 <% provide(:title, @battle.name) %>
 <h1><%= @battle.name %></h1>
 <div class="">
-  <ul>
-    <li><%= @battle.name %></li>
-    <li><%= @battle.date %></li>
-    <li><%= @battle.location %></li>
-    <li><%= @battle.belligerentA %></li>
-    <li><%= @battle.belligerentB %></li>
-    <li><%= @battle.strengthA %></li>
-    <li><%= @battle.strengthB %></li>
-    <li><%= @battle.casualtiesA %></li>
-    <li><%= @battle.casualtiesB %></li>
-    <li><%= @battle.result %></li>
-  </ul>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Location</th>
+      <th colspan="2">Belligerent</th>
+      <th colspan="2">Strength</th>
+      <th colspan="2">Casualties and Losses</th>
+      <th>Result</th>
+    </tr>
+    <tr id="hovertr">
+      <td><%= @battle.name %></td>
+      <td><%= @battle.date %></td>
+      <td><%= @battle.location %></td>
+      <td><%= @battle.belligerentA %></td>
+      <td><%= @battle.belligerentB %></td>
+      <td><%= @battle.strengthA %></td>
+      <td><%= @battle.strengthB %></td>
+      <td><%= @battle.casualtiesA %></td>
+      <td><%= @battle.casualtiesB %></td>
+      <td><%= @battle.result %></td>
+    </tr>
+  </table>
 </div>
