@@ -1,6 +1,6 @@
 <% provide(:title, @battle.name) %>
 <h1><%= @battle.name %></h1>
-<div class="">
+<div class="container">
   <table>
     <tr>
       <th>Name</th>
@@ -11,7 +11,7 @@
       <th colspan="2">Casualties and Losses</th>
       <th>Result</th>
     </tr>
-    <tr>
+    <tr id="hovertr">
       <td><%= @battle.name %></td>
       <td><%= @battle.date %></td>
       <td><%= @battle.location %></td>
